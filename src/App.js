@@ -1,6 +1,9 @@
 import { UseStatehook } from "./components/useState";
 import { UseEffecthook } from "./components/UseEffect";
 import { UseRefhook } from "./components/UseRef";
+import { UseMemohook } from "./components/UseMemo";
+import { UseContexthook } from "./components/UseContext";
+import { CounterContext } from "./components/CounterContext";
 
 
 
@@ -10,7 +13,13 @@ function App() {
     <div className="App">
       {/* <UseStatehook/> */}
       {/* <UseEffecthook/> */}
-      {<UseRefhook/>}
+      {/* {<UseRefhook/>} */}
+      {/* {<UseMemohook/>} */}
+      <CounterContext.Provider value="Hello From parent">
+      <UseContexthook/>
+      </CounterContext.Provider>
+      
+
 
     </div>
   );
