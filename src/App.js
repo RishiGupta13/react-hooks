@@ -4,6 +4,7 @@ import { UseRefhook } from "./components/UseRef";
 import { UseMemohook } from "./components/UseMemo";
 import { UseContexthook } from "./components/UseContext";
 import { CounterContext } from "./components/CounterContext";
+import { UseReducerhook } from "./components/UseReducer";
 
 
 
@@ -15,9 +16,11 @@ function App() {
       {/* <UseEffecthook/> */}
       {/* {<UseRefhook/>} */}
       {/* {<UseMemohook/>} */}
-      <CounterContext.Provider value="Hello From parent">
+      {/* <CounterContext.Provider value="Hello From parent">
       <UseContexthook/>
-      </CounterContext.Provider>
+      </CounterContext.Provider> */}
+
+      <UseReducerhook/>
       
 
 
