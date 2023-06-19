@@ -5,7 +5,7 @@ import { UseMemohook } from "./components/UseMemo";
 import { UseContexthook } from "./components/UseContext";
 import { CounterContext } from "./components/CounterContext";
 import { UseReducerhook } from "./components/UseReducer";
-
+import { CustomHook } from "./components/CustomHook";
 
 
 function App() {
@@ -20,7 +20,9 @@ function App() {
       <UseContexthook/>
       </CounterContext.Provider> */}
 
-      <UseReducerhook/>
+      {/* <UseReducerhook/> */}
+
+      <CustomHook/>
       
 
 
